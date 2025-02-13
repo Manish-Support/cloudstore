@@ -26,7 +26,7 @@ document.getElementById('signup-form').addEventListener('submit', async function
     if (username && password && email && contact && captchaInput) {
         if (captchaInput === currentCaptcha) {
             try {
-                const response = await fetch('signup.php', {
+                const response = await fetch('/home/manish/website/source/signup.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/x-www-form-urlencoded'
